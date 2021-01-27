@@ -1,0 +1,10 @@
+1. There are 16 rows in the dataset for which the value of store ratio is 0 and all of them have a popularity of 0. Based on this hypothesis we assume that all the rows in the test dataset that have a store ratio value of 0 belong to the '0' popularity class.
+
+2. Two outliers in the time column having values > 2*1e6
+3. One outlier in class 1 with store ratio > 0.9
+4. 3 outliers in test dataset having store score >0
+
+
+
+
+https://www.kaggle.com/iamleonie/handling-multimodal-distributions-fe-techniques
