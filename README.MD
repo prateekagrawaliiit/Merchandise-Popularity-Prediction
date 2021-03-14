@@ -15,7 +15,10 @@ The popularity class decides how popular the product is given the attributes whi
 Train.csv - 18208 rows x 12 columns (Includes popularity Column as Target variable)
 Test.csv - 12140 rows x 11 columns
 
-## Baseline Model : RandomForestClassifier (Baseline Score : 0.50)
-## Catboost Model : CatboostClassifier (Best Score : 0.40638)
+Steps :
 
-
+- Exploratory Data Analysis - There are a few outliers in certain columns
+- Feature Engineering - Generated new features using the agg of catorical columns with the continuous ones.
+- Model Selection - Experimented with different models and finally used Catboost,XGBoost and LightGBM
+- Final Model - Used an emsembled on the above three models with a weighted average based on their public leaderboard scores.
+- Post-Processing - Identified that certain rows in test are present in train and can be directly used.
